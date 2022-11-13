@@ -1,0 +1,20 @@
+@mixin headerLink($color: $primary-text-color) {
+    font-weight: 500;
+        line-height: calc(16/14);
+        letter-spacing: 0.02em;
+    
+        color: $color;
+    
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+}
+
+.nav-list__link{
+    @include headerLink($title-text-color)
+}
+
+.contact-list__link{
+    @include headerLink()
+}
