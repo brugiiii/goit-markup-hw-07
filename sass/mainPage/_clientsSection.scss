@@ -1,0 +1,27 @@
+.clients-list{
+    @extend %displayFlex;
+}
+
+.clients-list__item{
+    width: calc((100% - 150px) / 6);
+}
+
+.clients-list__item:not(:last-child){
+    margin-right: 30px;
+}
+
+.client-list__link{
+    @extend %displayFlex;
+    padding: 15px 31px;
+
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    color: $primary-text-color;
+    fill: currentColor; 
+    border-color: currentColor;
+
+    &:hover, &:focus{
+        color: $accent-color;
+    }
+}

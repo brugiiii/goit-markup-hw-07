@@ -1,0 +1,34 @@
+.hero-section{
+    background-color: $hero-bg;
+    background-image: linear-gradient($hero-overlay-bg, $hero-overlay-bg),
+    url(../images/overlay.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    margin: 0 auto;
+    max-width: 1600px;
+    height: 600px;
+
+    text-align: center;   
+    padding: 200px 0;
+    letter-spacing: 0.06em;
+}
+
+.hero-section__title {
+    max-width: 696px;
+    margin: 0 auto 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/44);
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: $white-color;
+}
+
+.hero-section__button{
+    @extend %button;
+    min-width: 216px;
+}

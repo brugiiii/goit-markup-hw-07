@@ -1,0 +1,25 @@
+.activity-list{
+    display: flex;
+    gap: 30px;
+}
+
+.activity-list__thumb{
+    position: relative;
+}
+
+.activity-list__title{   
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    padding: 27px 0;
+    margin-bottom: 0;
+
+    font-size: inherit;
+    line-height: calc(16/14);
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: $white-color;
+    background-color: $activity-title-bg-color;
+}

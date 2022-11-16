@@ -1,0 +1,13 @@
+.main-nav__logo{
+    @extend %logo;
+}
+
+.footer-left-side__logo{
+    @extend %logo;
+    margin-bottom: 20px;
+    display: inline-block;
+    &--white-color{
+        color: $white-color;
+    }
+}
+
