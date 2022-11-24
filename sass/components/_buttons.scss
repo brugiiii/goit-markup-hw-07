@@ -1,0 +1,79 @@
+.hero__button{
+    @extend %primary-button;
+
+    min-width: 216px;
+}
+
+.footer-form__button {
+    @extend %primary-button;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+
+    margin-left: auto;
+    margin-right: auto;
+    &::after {
+        content: '';
+
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+
+        background-image: url(../../icons/send.svg);
+    }
+}
+
+.modal-form__button{
+    @extend %primary-button;
+
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal__button{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+    
+    background-color: transparent;
+    
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.filter-list__button {
+    color: $title-text-color;
+    background-color: $button-bg-color;
+    font-family: inherit;
+
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    cursor: pointer;
+
+    border-radius: 4px;
+    padding: 6px 22px 6px;
+    min-width: 73px;
+    border: transparent;
+
+    transition: color $duration $cubic-bezier,
+    background-color $duration $cubic-bezier,
+    box-shadow $duration $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        color: $white-color;
+
+        background-color: $accent-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}

@@ -14,26 +14,29 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/portfolio.min.css" />
+    <link rel="stylesheet" href="./dist/css/portfolioPage.min.css" />
     <title>Document</title>
   </head>
   <body>
-    <header class="header-page">
-      <div class="container">
+    <header>
+      <div class="container header__container">
+        <a href="./index.html" class="link logo header__logo"
+          ><span class="logo__first-part">Web</span
+          ><span class="logo__last-part logo__last-part--black">Studio</span></a
+        >
         <nav class="main-nav">
-          <a href="./index.html" class="link main-nav__logo"
-            ><span class="main-nav__logo--accent-color">Web</span>Studio</a
-          >
           <ul class="nav-list list">
             <li class="nav-list__item">
               <a href="./index.html" class="nav-list__link link">Студія</a>
             </li>
             <li class="nav-list__item">
-              <a href="./portfolio.html" class="nav-list__link link current">Портфоліо</a>
+              <a href="./portfolio.html" class="nav-list__link nav-list__link--current link"
+                >Портфоліо</a
+              >
             </li>
             <li class="nav-list__item"><a href="" class="nav-list__link link">Контакти</a></li>
           </ul>
-          <ul class="list contact-list">
+          <ul class="contact-list list">
             <li class="contact-list__item">
               <a href="mailto:info@devstudio.com" class="contact-list__link link"
                 ><svg class="contacts-list__icon" width="16" height="12">
@@ -57,8 +60,8 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="section-title section__title--hidden">Works</h1>
-          <ul class="list filter-list">
+          <h1 class="section__title section__title--hidden">Works</h1>
+          <ul class="filter-list list">
             <li class="filter-list__item">
               <button type="button" class="filter-list__button">Усі</button>
             </li>
@@ -75,7 +78,7 @@
               <button type="button" class="filter-list__button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="list works-list">
+          <ul class="works-list list">
             <li class="works-list__item">
               <div class="works-list__thumb">
                 <img src="./images/8.jpg" alt="Відкритий ноутбук" />
@@ -176,7 +179,7 @@
             </li>
             <li class="works-list__item">
               <div class="works-list__thumb">
-                <img src="./images/15.jpg" alt="Бірка>" />
+                <img src="./images/15.jpg" alt="Бірка" />
                 <p class="works-list__overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -206,49 +209,44 @@
         </div>
       </section>
     </main>
-    <footer class="footer-page">
-      <div class="container container-footer-sides">
-        <div class="footer-page-left-side">
-          <a href="./index.html" class="link footer-left-side__logo"
-            >Web<span class="footer-left-side__logo--white-color">Studio</span></a
+    <footer class="page-footer">
+      <div class="container footer__container">
+        <div class="footer-left-side">
+          <a href="./index.html" class="link logo footer__logo"
+            ><span class="logo__first-part">Web</span
+            ><span class="logo__last-part logo__last-part--white">Studio</span></a
           >
           <address>
-            <ul class="list footer-address">
-              <li class="footer-address__item">
+            <ul class="footer-list list">
+              <li class="footer-list__item">
                 <a
                   href="https://goo.gl/maps/mnTzUHoqRGB6futn6"
                   rel="norefferrer noopener nofollow"
-                  class="footer-address__link footer-address__link--white-color link"
+                  class="footer-list__link footer-list__link--white-color link"
                   target="_blank"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="footer-address__item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="footer-address__link footer-address__link--opacity-white-color link"
+              <li class="footer-list__item">
+                <a href="mailto:info@devstudio.com" class="footer-list__link link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="footer-address__item">
-                <a
-                  href="tel:+380961111111"
-                  class="footer-address__link footer-address__link--opacity-white-color link"
-                  >+38 096 111 11 11</a
-                >
+              <li class="footer-list__item">
+                <a href="tel:+380961111111" class="footer-list__link link">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-page-center">
-          <strong class="footer-page-center__text">Приєднуйтесь</strong>
-          <ul class="list socials-list">
+        <div class="footer-center">
+          <p class="footer-center__text">Приєднуйтесь</p>
+          <ul class="socials-list list">
             <li class="socials-list__item">
               <a
                 href=""
                 rel="noopener nofollow norefferrer"
                 target="_blank"
-                class="link socials-list__link socials-list__link--dark-theme"
+                class="link socials-list__link socials-list__link--dark"
                 aria-label="Instagram logo"
               >
                 <svg class="socials-list__icon" width="20" height="20">
@@ -261,7 +259,7 @@
                 href=""
                 rel="noopener nofollow norefferrer"
                 target="_blank"
-                class="link socials-list__link socials-list__link--dark-theme"
+                class="link socials-list__link socials-list__link--dark"
                 aria-label="Instagram logo"
               >
                 <svg class="socials-list__icon" width="20" height="20">
@@ -274,7 +272,7 @@
                 href=""
                 rel="noopener nofollow norefferrer"
                 target="_blank"
-                class="link socials-list__link socials-list__link--dark-theme"
+                class="link socials-list__link socials-list__link--dark"
                 aria-label="Instagram logo"
               >
                 <svg class="socials-list__icon" width="20" height="20">
@@ -287,7 +285,7 @@
                 href=""
                 rel="noopener nofollow norefferrer"
                 target="_blank"
-                class="link socials-list__link socials-list__link--dark-theme"
+                class="link socials-list__link socials-list__link--dark"
                 aria-label="Instagram logo"
               >
                 <svg class="socials-list__icon" width="20" height="20">
@@ -297,7 +295,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-page-right-side">
+        <div class="footer-right-side">
           <form name="footer-form" class="footer-form">
             <strong class="footer-form__title">Підпишіться на розсилку</strong>
             <input

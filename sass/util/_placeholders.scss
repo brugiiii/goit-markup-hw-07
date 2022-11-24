@@ -1,0 +1,23 @@
+%primary-button{
+    background-color: $accent-color;
+    color: $white-color;
+    
+    font-weight: 700;
+    line-height: 1.88;
+    font-size: 16px;
+    font-family: inherit;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    
+    padding: 10px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+    
+    transition: background-color $duration $cubic-bezier;
+    
+    &:hover,
+    &:focus {
+        background-color: $hero-button-active-color
+    }
+}

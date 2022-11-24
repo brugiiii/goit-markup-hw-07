@@ -1,13 +1,27 @@
-.main-nav__logo{
-    @extend %logo;
+/* logo */
+.logo {
+    color: $accent-color;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    display: block;
 }
 
-.footer-left-side__logo{
-    @extend %logo;
-    margin-bottom: 20px;
-    display: inline-block;
-    &--white-color{
-        color: $white-color;
-    }
+.logo__last-part--black{
+    color: $black-color;
 }
 
+.logo__last-part--white{
+    color: $white-color;
+}
+
+.header__logo {
+    padding: 24px 0px 25px;
+    margin-right: 93px;
+}
+
+.footer__logo {
+    margin-bottom: 30px;
+}
